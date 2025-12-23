@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hansen Yang</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Panel -->
+        <div class="left-panel">
+            <!-- Profile Image -->
+            <div class="profile-section">
+                <div class="profile-image">
+                    <img src="images/Screenshot 2025-12-22 162304.png" alt="Hansen Yang" />
+                </div>
+            </div>
+
+            <!-- Navigation Sidebar -->
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#" class="nav-item active" data-section="home">Home</a></li>
+                    <li><a href="#" class="nav-item" data-section="experience">Resume</a></li>
+                    <li><a href="#" class="nav-item" data-section="projects">Projects</a></li>
+                    <li><a href="#" class="nav-item" data-section="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="right-panel">
+            <div class="content-area">
+
+                <!-- Home Section -->
+                <section id="home" class="content-section active">
+                    <h1><span class="typing-text" data-text="Hi! I'm Hansen"></span><span class="cursor">|</span></h1>
+
+                    <div class="intro-container">
+                        <div class="intro-text">
+                            <p>Growing up I've lived in a small city called Tracy for the majority of my life, and I'm now currently a 3rd year at <span class="highlight-yellow">UC Berkeley</span> studying Computer Science with a minor in Data Science! Prior to college I had actually never written a line of code in my life...</p>
+
+                            <p>The summer before my freshman year at Berkeley, I learned how to program by going over the CS61A content in advance—Berkeley's introductory CS course I would take in the Fall—and that's where I fell in love with programming. Since then, I've worked at a number of dope startups as both an intern and founding engineer in areas like the backend, frontend, fullstack, AI, mobile apps, etc., and will be tackling big tech this upcoming summer at <span class="highlight-red">Adobe</span> in Seattle as a software engineering intern!</p>
+
+                            <p>I also quite like cats, I have two named Pucca and Baki. There are some pictures below of them :)</p>
+
+                            <p>I love meeting new people and making new connections, so don't hesitate to reach out if you have any questions or would like to chat!</p>
+
+                            <p class="email-contact">
+                                <a href="mailto:hansenyang@berkeley.edu">hansenyang@berkeley.edu</a>
+                            </p>
+                        </div>
+
+                        <!-- Terminal Section -->
+                        <div class="terminal-section">
+                            <div class="terminal">
+                                <div class="terminal-header">
+                                    <div class="terminal-buttons">
+                                        <span class="btn-close"></span>
+                                        <span class="btn-minimize"></span>
+                                        <span class="btn-maximize"></span>
+                                    </div>
+                                    <div class="terminal-title">hansen@berkeley:~$</div>
+                                </div>
+                                <div class="terminal-body">
+                                    <div class="terminal-line">
+                                        <span class="prompt">hansen@berkeley:~$ </span>
+                                        <span class="command typewriter">./whoami.sh</span>
+                                    </div>
+                                    <div class="terminal-output">
+                                        <p>Software Engineer | UC Berkeley CS '27</p>
+                                        <p>Specializing in AI/ML and Full-Stack Development</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cat Photos Section -->
+                    <div class="cat-photos">
+                        <h3>feat. Pucca and Baki</h3>
+                        <div class="cat-gallery">
+                            <div class="cat-image" data-image="images/IMG_4161.jpeg">
+                                <img src="images/IMG_4161.jpeg" alt="Pucca and Baki" />
+                            </div>
+                            <div class="cat-image" data-image="images/IMG_4394.jpeg">
+                                <img src="images/IMG_4394.jpeg" alt="Pucca and Baki" />
+                            </div>
+                            <div class="cat-image" data-image="images/IMG_7753.jpeg">
+                                <img src="images/IMG_7753.jpeg" alt="Pucca and Baki" />
+                            </div>
+                            <div class="cat-image" data-image="images/Screenshot 2025-12-22 162332.png">
+                                <img src="images/Screenshot 2025-12-22 162332.png" alt="Pucca and Baki" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <a href="https://github.com/HansenYangg" target="_blank" class="social-icon" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://x.com/hansennlol" target="_blank" class="social-icon" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hansenyangg/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="mailto:hansenyang@berkeley.edu" class="social-icon" aria-label="Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Experience Section -->
+                <section id="experience" class="content-section">
+                    <h1><span class="typing-text" data-text="Resume"></span><span class="cursor">|</span></h1>
+
+                    <!-- Education Section -->
+                    <div class="education-section">
+                        <h2>Education</h2>
+                        <div class="education-item">
+                            <div class="education-content">
+                                <h3>Bachelor of Arts in Computer Science</h3>
+                                <p class="education-school">University of California, Berkeley, 2027</p>
+                                <div class="coursework">
+                                    <h4>Coursework</h4>
+                                    <div class="coursework-list">
+                                        <span>Data Structures & Algorithms</span>
+                                        <span>Artificial Intelligence</span>
+                                        <span>Computer Architecture</span>
+                                        <span>Linear Algebra</span>
+                                        <span>Discrete Mathematics & Probability Theory</span>
+                                        <span>Principles of Data Science</span>
+                                        <span>Computer Security</span>
+                                        <span>Dynamical Systems</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Header -->
+                    <h2 class="section-header">Experience</h2>
+
+                    <div class="experience-list">
+                        <div class="experience-item">
+                            <div class="exp-left">
+                                <div class="exp-company">Adobe</div>
+                                <div class="exp-date">Summer 2026</div>
+                            </div>
+                            <div class="exp-content">
+                                <h3>Incoming Software Engineer Intern</h3>
+                                <p class="exp-description">Adobe Cloud Platform & Collaboration (ACPC) Team</p>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <div class="exp-left">
+                                <div class="exp-company">Solace</div>
+                                <div class="exp-date">Aug 2025 — Present</div>
+                            </div>
+                            <div class="exp-content">
+                                <h3>Founding Engineer</h3>
+                                <div class="project-links" style="margin-bottom: 16px;">
+                                    <a href="https://solacelaunch.com" target="_blank" class="project-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                                        solacelaunch.com
+                                    </a>
+                                </div>
+                                <p class="exp-description">At Solace, I'm currently working as a founding engineer and built a lot of what Solace is today from the ground up. Our sole mission is to make mental wellness more accessible, and we're doing so through leveraging AI/ML to build both hardware and software AI wellness agents. I worked on Solace's core infrastructure, the core voice-to-voice and hyper-personilization functionality of the AI agents, amongst some other cool features.</p>
+                                <div class="exp-tech">
+                                    <span>Python</span>
+                                    <span>FastAPI</span>
+                                    <span>React</span>
+                                    <span>TypeScript</span>
+                                    <span>OpenAI</span>
+                                    <span>Supabase</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <div class="exp-left">
+                                <div class="exp-company">EduSync</div>
+                                <div class="exp-date">Jun 2025 — Aug 2025</div>
+                            </div>
+                            <div class="exp-content">
+                                <h3>Software Engineer Intern</h3>
+                                <p class="exp-description">EduSync is a startup aiming to bring AI to education starting from a young age. I worked on entirely refactoring the RAG system, a bunch of AI-based features for teachers and students to familiarize themselves with AI in the classroom, amongst a lot of other optimizations. Some of the features I built and shipped from 0->100 include AI-based PowerPoint/rubric/assignment feedback generators, a weekly pulse report feature for parents, and more.</p>
+                                <div class="exp-tech">
+                                    <span>Python</span>
+                                    <span>RAG</span>
+                                    <span>LangChain</span>
+                                    <span>AI/ML</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <div class="exp-left">
+                                <div class="exp-company">SuperIntro</div>
+                                <div class="exp-date">Nov 2024 — Jan 2025</div>
+                            </div>
+                            <div class="exp-content">
+                                <h3>Software Engineer Intern</h3>
+                                <p class="exp-description">SuperIntro is an AI-based social networking platform and relationship simulator. I worked primarily on the backend; some examples include how I updated event RSVP system with TypeScript + MongoDB for match-based invitations and notifications, built and prompted conversational AI agents with LangChain automating 120+ simulated interactions per day, and generated successful matchmaking in 92% of registered SuperIntro users across SF/LA/NYC.</p>
+                                <div class="exp-tech">
+                                    <span>TypeScript</span>
+                                    <span>MongoDB</span>
+                                    <span>LangChain</span>
+                                    <span>Node.js</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Extracurriculars -->
+                    <div class="extracurriculars-content">
+                        <h2>Extracurriculars</h2>
+                        <p>Besides my professional experience, I've also been involved in a few other things around campus. I've done some tutoring (CS61A, CS61B/Data Structures and Algorithms), and participated as a team member in a few different tech clubs where I worked on things ranging from software applications all the way to rocketry.</p>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <a href="https://github.com/HansenYangg" target="_blank" class="social-icon" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://x.com/hansennlol" target="_blank" class="social-icon" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hansenyangg/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="mailto:hansenyang@berkeley.edu" class="social-icon" aria-label="Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Projects Section -->
+                <section id="projects" class="content-section">
+                    <h1><span class="typing-text" data-text="Projects"></span><span class="cursor">|</span></h1>
+                    <div class="projects-list">
+                        <div class="project-item">
+                            <div class="project-image">
+                                <img src="images/presentify.jpg" alt="Presentify">
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <div>
+                                        <h3>Presentify</h3>
+                                        <p class="project-subtitle">AI PowerPoint Generator</p>
+                                    </div>
+                                    <span class="project-period">June 2025 - July 2025</span>
+                                </div>
+                                <p class="project-description">OpenAI + pandoc PowerPoint generator for teachers based on 2,000+ student errors pulled from Supabase.</p>
+                                <div class="project-links">
+                                    <a href="https://drive.google.com/file/d/1QmZhbp-Fcm_T9cV21sDK7jhVOrNceKrV/view" target="_blank" class="project-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+                                        Demo
+                                    </a>
+                                </div>
+                                <div class="project-tech">
+                                    <span>OpenAI</span>
+                                    <span>Pandoc</span>
+                                    <span>Supabase</span>
+                                    <span>Python</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-image">
+                                <img src="images/speechly.png" alt="Speechly">
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <div>
+                                        <h3>Speechly</h3>
+                                        <p class="project-subtitle">AI-Powered Public Speaking Platform</p>
+                                    </div>
+                                    <span class="project-period">October 2024 - January 2025</span>
+                                </div>
+                                <p class="project-description">Python/Flask + JavaScript web app using OpenAI to critique and provide feedback to user presentations.</p>
+                                <div class="project-links">
+                                    <a href="https://speechly.me" target="_blank" class="project-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                                        speechly.me
+                                    </a>
+                                    <a href="https://github.com/HansenYangg/Speechly" target="_blank" class="project-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                        GitHub
+                                    </a>
+                                </div>
+                                <div class="project-tech">
+                                    <span>Python</span>
+                                    <span>Flask</span>
+                                    <span>JavaScript</span>
+                                    <span>OpenAI</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-image">
+                                <img src="images/offlinegpt.jpg" alt="OfflineGPT">
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <div>
+                                        <h3>OfflineGPT</h3>
+                                        <p class="project-subtitle">Software to Use LLMs Offline</p>
+                                    </div>
+                                    <span class="project-period">Oct 2024 - Dec 2024</span>
+                                </div>
+                                <p class="project-description">Python + FastAPI software that allows users to use LLMs offline if the dorm wifi goes out.</p>
+                                <div class="project-links">
+                                    <a href="https://github.com/HansenYangg/OfflineGPT" target="_blank" class="project-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                        GitHub
+                                    </a>
+                                </div>
+                                <div class="project-tech">
+                                    <span>Python</span>
+                                    <span>FastAPI</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-image">
+                                <img src="images/unplugged.png" alt="Unplugged">
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <div>
+                                        <h3>Unplugged</h3>
+                                        <p class="project-subtitle">Cross-Platform Offline LLM App</p>
+                                    </div>
+                                    <span class="project-period">Oct 2024 - Nov 2024</span>
+                                </div>
+                                <p class="project-description">Backend for an iOS and Android compatible app (with Objective-C++/JNI) that allows users to use the newly released Quantized Lightweight Llama Models (3.2 1B and 3B) completely offline.</p>
+                                <div class="project-links">
+                                    <a href="https://github.com/HansenYangg/Unplugged" target="_blank" class="project-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                        GitHub
+                                    </a>
+                                </div>
+                                <div class="project-tech">
+                                    <span>Objective-C++</span>
+                                    <span>JNI</span>
+                                    <span>iOS</span>
+                                    <span>Android</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-image">
+                                <img src="images/chatcentral.jpg" alt="ChatCentral">
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <div>
+                                        <h3>ChatCentral</h3>
+                                        <p class="project-subtitle">Interactive LLM Chat Interface</p>
+                                    </div>
+                                    <span class="project-period">September 2024</span>
+                                </div>
+                                <p class="project-description">React/HTML/CSS interactive LLM chat interface website (NO API KEYS - pure frontend). This was purely to practice my React and was probably the first real frontend thing I did lol.</p>
+                                <div class="project-links">
+                                    <a href="https://hansensllmchatter.netlify.app/" target="_blank" class="project-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                                        hansensllmchatter.netlify.app
+                                    </a>
+                                </div>
+                                <div class="project-tech">
+                                    <span>React</span>
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-image">
+                                <img src="images/world gen.jpg" alt="World Generation">
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <div>
+                                        <h3>World Generation</h3>
+                                        <p class="project-subtitle">Interactive 2D Game</p>
+                                    </div>
+                                    <span class="project-period">April 2024</span>
+                                </div>
+                                <p class="project-description">Interactive 2D game in Java using an algorithm to randomly generate rooms and connective hallways. This was actually a project I built for my data structures and algorithms class, but thought it was really cool.</p>
+                                <div class="project-links">
+                                    <a href="https://drive.google.com/file/d/1WCgwiBbuCBG9L02ny1bw6doXQ-FUcuaZ/view" target="_blank" class="project-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+                                        Demo
+                                    </a>
+                                </div>
+                                <div class="project-tech">
+                                    <span>Java</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <a href="https://github.com/HansenYangg" target="_blank" class="social-icon" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://x.com/hansennlol" target="_blank" class="social-icon" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hansenyangg/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="mailto:hansenyang@berkeley.edu" class="social-icon" aria-label="Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Contact Section -->
+                <section id="contact" class="content-section">
+                    <h1><span class="typing-text" data-text="Contact"></span><span class="cursor">|</span></h1>
+                    <div class="contact-content">
+                        <p>Feel free to reach out if you'd like to connect!</p>
+
+                        <div class="contact-methods">
+                            <div class="contact-item">
+                                <label>Email</label>
+                                <a href="mailto:hansenyang@berkeley.edu">hansenyang@berkeley.edu</a>
+                            </div>
+
+                            <div class="contact-item">
+                                <label>LinkedIn</label>
+                                <a href="https://www.linkedin.com/in/hansenyangg/" target="_blank">linkedin.com/in/hansenyangg</a>
+                            </div>
+
+                            <div class="contact-item">
+                                <label>GitHub</label>
+                                <a href="https://github.com/HansenYangg" target="_blank">github.com/HansenYangg</a>
+                            </div>
+
+                            <div class="contact-item">
+                                <label>Twitter</label>
+                                <a href="https://x.com/hansennlol" target="_blank">x.com/hansennlol</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <a href="https://github.com/HansenYangg" target="_blank" class="social-icon" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://x.com/hansennlol" target="_blank" class="social-icon" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hansenyangg/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="mailto:hansenyang@berkeley.edu" class="social-icon" aria-label="Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+                        </a>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
