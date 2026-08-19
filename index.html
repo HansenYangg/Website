@@ -41,7 +41,7 @@
                         <div class="intro-text">
                             <p>Growing up I've lived in a small city called Tracy for the majority of my life, and I'm now currently a 3rd year at <span class="highlight-yellow">UC Berkeley</span> studying Computer Science with a minor in Data Science! Prior to college I had actually never written a line of code in my life...</p>
 
-                            <p>The summer before my freshman year at Berkeley, I learned how to program by going over the CS61A content in advance—Berkeley's introductory CS course I would take in the Fall—and that's where I fell in love with programming. Since then, I've worked at a number of dope startups as both an intern and founding engineer in areas like the backend, frontend, fullstack, AI, mobile apps, etc., and will be tackling big tech this upcoming summer at <span class="highlight-red">Adobe</span> in Seattle as a software engineering intern!</p>
+                            <p>The summer before my freshman year at Berkeley, I learned how to program by going over the CS61A content in advance—Berkeley's introductory CS course I would take in the Fall—and that's where I fell in love with programming. Since then, I've worked at a number of dope startups as both an intern and founding engineer in areas like the backend, frontend, fullstack, AI, mobile apps, etc., and most recently spent last summer at <span class="highlight-red">Adobe</span> in Seattle as a software engineering intern!</p>
 
                             <p>I also quite like cats, I have two named Pucca and Baki. There are some pictures below of them :)</p>
 
@@ -151,10 +151,10 @@
                                 <div class="exp-date">Summer 2026</div>
                             </div>
                             <div class="exp-content">
-                                <h3>Incoming Software Engineer Intern</h3>
-                                <p class="exp-description">Adobe Cloud Platform & Collaboration (ACPC) Team</p>
+                                <h3>Software Engineer Intern</h3>
+                                <p class="exp-description">Worked on the Adobe Cloud Platform & Collaboration (ACPC) team, building out a new way to preview assets. Within Adobe, there was no lightweight, efficient way to inspect assets in place without having to either lose your place on the page or have to go to a new tab entirely. My project provides an invokable action to preview an asset within a lightweight modal, with arrow key navigation, near-instant caching, and a bunch of additional capabilities like image zooming, video scrubbing, and more. Built and architected this new component end-to-end and shipped it.</p>
                             </div>
-                        </div>
+                        </div> 
 
                         <div class="experience-item">
                             <div class="exp-left">
@@ -529,5 +529,38 @@
     </div>
 
     <script src="script.js"></script>
+
+    <!-- Auto-refresh script for development -->
+    <script>
+        (function() {
+            let lastModified = {};
+            const files = ['index.html', 'style.css', 'script.js'];
+
+            async function checkForChanges() {
+                try {
+                    for (const file of files) {
+                        const response = await fetch(file, {
+                            method: 'HEAD',
+                            cache: 'no-cache'
+                        });
+                        const modified = response.headers.get('Last-Modified');
+
+                        if (lastModified[file] && lastModified[file] !== modified) {
+                            console.log(`${file} changed, reloading...`);
+                            location.reload();
+                            return;
+                        }
+                        lastModified[file] = modified;
+                    }
+                } catch (e) {
+                    console.error('Auto-refresh error:', e);
+                }
+            }
+
+            // Check every second
+            setInterval(checkForChanges, 1000);
+            console.log('Auto-refresh enabled - watching for changes...');
+        })();
+    </script>
 </body>
 </html>

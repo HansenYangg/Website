@@ -375,8 +375,8 @@ p {
     width: 220px;
     height: 220px;
     transform-style: preserve-3d;
-    animation: rotate-carousel 16s linear infinite;
     cursor: pointer;
+    animation: rotate-carousel 16s linear infinite;
 }
 
 .cat-image:nth-child(1) {
