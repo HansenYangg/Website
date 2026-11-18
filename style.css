@@ -571,6 +571,12 @@ a {
     margin-bottom: 18px;
 }
 
+/* Show the whole image for screenshots that are taller than the usual wide ones */
+.project-shot--full {
+    max-height: none;
+    height: auto;
+}
+
 /* Contact */
 .contact-list {
     display: grid;
